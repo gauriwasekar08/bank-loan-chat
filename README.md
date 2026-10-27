@@ -67,4 +67,9 @@ cover SQL safety, read-only enforcement, query repair and the full pipeline.
 
 ## What I learned
 
-(Add 2-3 lines in your own words after you build and run it.)
+- My first prompt returned only the label (e.g. "small business") without the number. I added an instruction to always return the metric, which gave "25.6%" and made charts possible.
+- The SQL was correct, but the AI's explanation once made a claim that was not in the data ("over half of funding comes from 3 states"; the real figure was about 35%). I constrained the insight prompt and now verify insights against the data.
+- Model names on Groq change over time. My first model was not available, so I listed the available models through the API and switched to GPT-OSS 120B.
+- I keep my API key in a .env file that is never uploaded to GitHub.
+
+
