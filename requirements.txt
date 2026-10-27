@@ -1,0 +1,5 @@
+groq
+pandas
+python-dotenv
+matplotlib
+pytest
